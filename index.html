@@ -10,30 +10,32 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            color: #f4f4f4;
+            background-color: #121212; /* Dark theme background */
         }
 
         header {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('mypic.jpg') no-repeat center center/cover;
-        color: #fff;
-        text-align: center;
-        padding: 6rem 1rem; /* Increased padding for a taller header */
-        position: relative;
-        height: 80vh; /* Set a larger height for the header */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('mypic.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 6rem 1rem;
+            position: relative;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
         header h1 {
-        font-size: 3rem;
-        margin: 0;
-    }
+            font-size: 3rem;
+            margin: 0;
+        }
 
-    header p {
-        font-size: 1.5rem;
-        margin: 0.5rem 0 0;
-    }
+        header p {
+            font-size: 1.5rem;
+            margin: 0.5rem 0 0;
+        }
 
         header::after {
             content: '';
@@ -47,29 +49,40 @@
         }
 
         nav {
-            background: #333;
-            color: #fff;
+            background: #1f1f1f;
+            color: #f4f4f4;
             padding: 0.5rem 1rem;
             text-align: center;
         }
 
         nav a {
-            color: #fff;
+            color: #f4f4f4;
             margin: 0 1rem;
             text-decoration: none;
             font-weight: bold;
         }
 
+        nav a:hover {
+            color: #00bcd4; /* Highlight on hover */
+        }
+
         .quote {
             font-size: 1.5rem;
             font-style: italic;
-            color: #333;
+            color: #f4f4f4;
             margin: 2rem auto;
             max-width: 800px;
             text-align: center;
             padding: 1rem;
-            background: #f4f4f4;
-            border-left: 4px solid #007bff;
+            background: #1f1f1f;
+            border-left: 4px solid #00bcd4;
+        }
+
+        .quote span {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+            color: #00bcd4;
         }
 
         section {
@@ -81,12 +94,7 @@
         .hero {
             text-align: center;
             padding: 3rem 1rem;
-            background: #f4f4f4;
-        }
-
-        .hero h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
+            background: #1f1f1f;
         }
 
         .about, .skills, .projects, .contact {
@@ -102,16 +110,16 @@
         }
 
         .skills li {
-            background: #007bff;
+            background: #00bcd4;
             color: #fff;
             padding: 0.5rem 1rem;
             border-radius: 5px;
         }
 
         .projects .project-card {
-            background: #f9f9f9;
+            background: #1f1f1f;
             padding: 1rem;
-            border: 1px solid #ddd;
+            border: 1px solid #333;
             border-radius: 5px;
             margin-bottom: 1rem;
         }
@@ -121,10 +129,14 @@
         }
 
         footer {
-            background: #333;
-            color: #fff;
+            background: #1f1f1f;
+            color: #f4f4f4;
             text-align: center;
             padding: 1rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0 0;
         }
     </style>
 </head>
@@ -148,8 +160,8 @@
     </section>
 
     <div class="quote">
-        "You have power over your mind, not outside events. Realise this and you’ll find strength." 
-            ~ Marcus Aurelius
+        "You have power over your mind, not outside events. Realise this and you’ll find strength."
+        <span>~ Marcus Aurelius</span>
     </div>
 
     <section id="about" class="about">
@@ -183,11 +195,10 @@
 
     <section id="contact" class="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:mail@sanchitdikshit.com">mail@sanchitdikshit.com</a></p>
+        <p>Email: <a href="mailto:sanchitdikshit@gmail.com">sanchitdikshit@gmail.com</a></p>
         <p>GitHub: <a href="https://github.com/sanchitkd" target="_blank">github.com/sanchitkd</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/sanchitdikshit" target="_blank">linkedin.com/in/sanchitdikshit</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/sanchitkd" target="_blank">linkedin.com/in/sanchitkd</a></p>
         <p>X: <a href="https://x.com/sanchitkd" target="_blank">x.com/sanchitkd</a></p>
-        
     </section>
 
     <footer>
