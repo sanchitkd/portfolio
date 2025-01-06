@@ -13,26 +13,27 @@
         }
 
         header {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('mypic.jpg') no-repeat center center/cover;
-            color: #fff;
-            text-align: center;
-            padding: 4rem 1rem;
-            position: relative;
-        }
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('MyPic.jpg') no-repeat center center/cover;
+        color: #fff;
+        text-align: center;
+        padding: 6rem 1rem; /* Increased padding for a taller header */
+        position: relative;
+        height: 80vh; /* Set a larger height for the header */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
         header h1 {
-            margin: 0;
-            font-size: 3rem;
-            z-index: 2;
-            position: relative;
-        }
+        font-size: 3rem;
+        margin: 0;
+    }
 
-        header p {
-            margin: 1rem 0;
-            font-size: 1.2rem;
-            z-index: 2;
-            position: relative;
-        }
+    header p {
+        font-size: 1.5rem;
+        margin: 0.5rem 0 0;
+    }
 
         header::after {
             content: '';
@@ -190,6 +191,7 @@
     </section>
 
     <footer>
+        <span id="currentYear"></span><script>document.getElementById("currentYear").innerText = new Date().getFullYear();</script>
         <p>&copy; 2025 Sanchit Dikshit. All rights reserved.</p>
     </footer>
 </body>
