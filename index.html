@@ -110,12 +110,13 @@
         }
 
         .wrapper {
-            display: inline-flex;
+            display: flex; /* Use flexbox for alignment */
+            justify-content: center; /* Center horizontally */
+            gap: 20px; /* Spacing between icons */
             margin-top: 1.5rem;
         }
 
         .wrapper .icon {
-            margin: 0 20px;
             text-align: center;
             cursor: pointer;
             display: flex;
@@ -252,7 +253,7 @@
             </a>
             <a href="https://x.com/sanchitkd" class="icon twitter" target="_blank">
                 <div class="tooltip">X</div>
-                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-x-twitter"></i></span>
             </a>
         </div>
     </section>
